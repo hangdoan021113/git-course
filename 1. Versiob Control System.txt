@@ -1,0 +1,6 @@
+Version Control System (VCS): Hệ thống quản lý các phiên bản
+ví dụ: Google Docs sử dụng Version Control System để dễ quản lý các phiên bản
+Các loại VCS:
++ Local: Lưu ở máy cá nhân
++ Centralize: Lưu ở một máy chủ tập trung
++ Distributed: Lưu ở nhiều máy khác nhau.

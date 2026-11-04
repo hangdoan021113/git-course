@@ -1,0 +1,46 @@
+Git ignore:
+- Thay đổi Commit message.
+- Đưa từ dùng staging về working directory
+- Đưa từ vùng repository về staging
+- file: .gitignore 
+.gitignore = GitIgnore= Bỏ qua
+Dùng để bỏ qua các file không cần git thep dõi
+Ignore file
+    <file_name>
+Ignore folder
+    <folder_name>
+Ignore file after added 
+    git rm --cached <file_name>
+Ví dụ: Ta có các file folder 1, folder 2, file 1, file 2
+folder 1
+    file 1.tct
+    file 2.txt
+    file 3.txt
+folder 2
+    file 1.txt
+    file 2.txt
+    file 4.txt
+file 1.txt
+file 2.txt
+file 5.txt
+------
+Câu lệnh chạy terminal để xem các file trong folder tổng:
+--- git init
+--- git status
+Giả sử cấn bỏ qua file 1, file 2
+
+ta tạo 1 file trong folder tổng: .gitignore
+
+Trong file/folder .gitignore để tên 
+file1.txt  (tên file)
+folder1/ (tên folder cụ thể)
+forder*/ (các folder bắt đầu từ forder)
+forder*/file2.txt (các file2 của các folder bắt đầu từ folder)
+
+"Cần list ra các file cả trong các folder: chạy terminal:
+--- git add .
+--- git status
+Cần reset kết quả đã chạy:
+--- git rm --cached
+
+

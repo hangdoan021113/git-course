@@ -1,0 +1,13 @@
+Ba trạng thái của Git gồm (1-Working directory; 2-staging Area; 3-Repository)
+Vùng 1-working directory: vùng chứa các file có sự thay đổi.
+    Ví dụ: khi đọc lệnh Git init => sẽ sinh ra 3 vùng
+    Tất cả các file sẽ năng được ở vùng đầu tiên
+
+Vùng 2-staging Area: Chuẩn bị cho Commit. Để đưa file từ vùng 1 sang vùng 2 ta dùng lệnh 
+    + Trong trường hợp chỉ đưa 1 file: git add + tên file 
+    + Trong trường hợp cho nhiều file: git add file1 file2
+    + Trong trường hợp add toàn bộ file: git add .
+
+Vùng 3-Repository: Để đua file từ vùng 2 sang vùng 3 ta dùng lệnh:
+    git commit -m"<<nội dung message bất kỳ>>"
+    ý nghĩa: Trong file repo sẽ có 1 commit có nội dung như trên

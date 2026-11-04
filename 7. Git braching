@@ -1,0 +1,9 @@
+Brach là gì? Nhánh
+- Dùng brach để tạo ra một vùng làm việc mới, không ảnh hưởng tới vùng làm việc đã ổn định.
+- Không có brach: Backup file ra chỗ khác, copy lại.
+- Kiểm tra đang ở nhánh nào, câu kênh: git brach => kết quả hiển thị * (tên) : hiện tại đang đứng ở nhánh (tên) có dấu sao
+Tạo ra 1 nhánh từ main tại thời điểm commit lần n, khi đó nhánh được tạo sẽ copy toàn bộ lịch sử của nhánh gốc tại thời điểm tạo (các nhánh được tạo từ nhánh khác sẽ không có lịch sử từ gốc khác).
+- Tạo nhánh Câu lệnh: git brach (tên_nhánh)
+- Để chuyển nhánh: git check out (tên_brach)
+- Vừa tạo nhánh + chuyển nhánh: git check -b (tên_ nhánh)
+TIPS: Luôn tạo brach mới tước khi thực hiện 1 câu lệnh copy từ internet

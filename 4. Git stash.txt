@@ -1,0 +1,19 @@
+Git Stash 
+Stash: lưu trữ những công việc đang làm dở vào vùng nhớ tạm
+Unstash: đưa lại những công việc đang làm dở trở lại vào vùng working directory
+Ví dụ:
+    Commit file cũ
+    Thay đổi 1 hay nhiều dòng 
+    Lưu lại file trước khi thay đổi, lênh: git stash save
+    Thay đổi dữ liệu và commit file dữ liệu thay đổi, lệnh: git commit -m"new change"
+    Muốn thay đổi trước đó đang làm dở: git stash pop
+Một số câu lệnh thường gặp:
++ git stash: Lưu trữ lại công việc đang làm, chỉ lưu các file đã được tracked - git stash
++ git stash list: Hiển thị danh sách các stash đang lưu trữ  - git stash list
++ git stash save "<name>": Lưu trữ lại công việc đang làm với tên <name> - git stash save "WIP javascript exercises"
++ git stash save --all: stash cả untracked file - git stash save --all
++ git stash pop: unstash nội dung stash mới nhất. Sau khi unstash xong thì xóa stash đó đi - git stash pop
++ git stash pop <stash_id>:  Unstash nội dung có stash id tương ứng. Sau khi unstash thì xóa stash đó đi - git stash pop stash@{2}
++ git stash apply: Unstash nội dung stash mới nhất. Sau khi unstash vẫn giữ stash đó lại. Thường dùng khi muốn apply change ở multiple branch - git stash apply
++ git stash apply <stash_id>: Unstash nội dung stash mới theo stash_id. Sau khi unstash vẫn giữ stash đó lại. Thường dùng khi muốn apply change ở multiple branch - git stash apply stash@{2}
+

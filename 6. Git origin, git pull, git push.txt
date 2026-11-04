@@ -1,0 +1,18 @@
+Khái niệm origin, push và pull
+Làm việc trên máy tính gọi là Local computer
+=> để đưa file lên GitHub dùng những câu lệnh: 
+    - git push origin master
+    - Hoặc git push origin main.
+Câu lệnh: git remote add origin <hubkey>: 
+    - Ý nghĩa: Hãy vào git (remote: từ xa) và tạo 1 origin (origin ở đây là tên, có thể không cần đặt là origin)
+    - Nếu enter không hiển thị gì tức là không có lỗi
+Kiểm tra tất cả các remote, câu lệnh: git remote -v
+    - Hiển thị tất cả các remote đang có của mình, mỗi remote sẽ có 2 dòng: fetch: lấy dữ liệu về và push: để đẩy dữ liệu lên
+    => đã có dự liên kết giữa local và GitHub tên origin
+Để push file: git push (origin) main
+Để lấy các file về: dùng pull: git pull (tên) main: Kéo các file về
+    - Nếu lịch sử khác nhau: git pull (tên) main --rebase
+
+===> Tổng kết: Remote là các đường link dẫn đến 1 repo online khi push code lên hoặc pull code về
+Đồng bộ gitlab và GitHub: làm thế nào để push lên (nếu có lỗi): git push -f (tên) main
+    + -f là - force có nghĩa là ép buộc, đè code cũ trên GitHub

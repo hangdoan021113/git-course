@@ -1,0 +1,4 @@
+Câu 1: Câu lệnh để cài đặt email và name là gì
+- Emai: git cofig --global user.email "<email>"
+- Name: git cofig --global user.name "<name>"
+Câu 2: Tạo repo mới trên Github với tên git-course và push code của bài 2 lên GitHub 

@@ -1,0 +1,44 @@
+Các câu lệnh thường dùng:
++ Khởi tạo thư mục được quản lý bởi Git: git init
++ Sau khi cài đặt xong, cần cấy hình git:
+    - Chuyển thư mục:
+        Chuyển ra ngoài thư mục cha: cd ..
+        Chuyển đến thư mục con bất kỳ: cd "tên thư mục"
+    - Cho 1 repo:
+        git config user.name "<name>"
+        git config user.email "<email>"
+    - Cho toàn bộ máy tính:
+        git config --global user.name "user"
+        git config --global user.email "email"
++ Đưa file vào vùng Staging:
+    - Đưa 1 file: git add "tên file"
+    - Đưa nhiều file: git add "tên file 1" "tên file 2"
+    - Đưa toàn bộ file: git add .
++ Kiểm tra trạng thái file, file ở vùng nào, lệnh: git status
+    - file màu xanh lá cây và ở vùng changes to be committed: ở vùng Staging
+    - file màu đỏ và nằm ở vùng untracked file: ở vùng working directory 
+    ==> Ý nghĩa để biết được những file nào vào được commit của mình.
++ Git - simple workflow
+    - Không dùng global config : init -> config -> add -> commit -> push
+    - Dùng global config: init -> add -> commit -> push.
++ Đưa file vào vùng repository: câu lệnh commit:
+    - câu lệnh: git commit -m"Nội dung thông báo":Sau khi commit sẽ hiển thị thông báo: Bao nhiêu file changed, bn insert, bn delete.
+    - Kiểm tra lịch sử commit: git log => Hiển thị commit hub , author: Tác giả; date: ngày commit; Và nội dung commit. Để thoát khỏi màn hình kiểm tra git log => Bấm nút q
++ Commit convention: 
+    - convention: quy tắc. 
+    - Conventio giúp:
+        + Cả team làm việc với nhau theo một quy tắc
+        + Code gọn gàng, sạch đẹp hơn.
+    - Convention sử dụng:
+        + Commit message cần rõ ràng, chuyên nghiệp.
+        + Thống nhất commit (theo quy tắc riêng): <type>: <short_description>
+            - Type: loại commit:
+                + chore: sửa nhỏ lẻ, chính tả, xóa file không dùng tới, ....
+                + feat: thêm tính năng mới, testcase mới
+                + fix: sửa lỗi 1 test trước đó
+            - short_description: Mô tả ngắn gọn (50 kí tự), tiếng anh hoặc tiếng việt không dấu
+        + Ví dụ:
+            "chore: remove unused file"
+            "feat: add code for exercises 2"
+            
+    
